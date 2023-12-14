@@ -1,0 +1,23 @@
+.animalPhotos{
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    border: 5px solid wheat;
+    box-sizing: border-box;
+    padding-left: 225px;
+}
+
+.animalPhotos > div {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+  }
+
+  .animalPhotos img{
+    transition: transform 0.75s ease-in-out;
+  }
+
+.animalPhotos img:hover{
+    transform: scale(1.2);
+}
+

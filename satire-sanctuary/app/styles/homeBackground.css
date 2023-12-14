@@ -1,0 +1,281 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+.background{
+    height: 100vh;
+    background: linear-gradient(to right, #ff416c, #ffce00, #3e8e9e);
+    background-size: 200% 100%;
+    animation: gradientTransition 10s ease-in-out infinite;
+}
+
+.header{
+  color: whitesmoke;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-family: 'Franklin Gothic Medium';
+  font-size: 45px;
+}
+
+.sectionOne {
+    position: relative;
+    height: 255vh;
+  }
+  
+  .sectionOne::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #ff416c, #ffce00, #3e8e9e);
+    z-index: 1;
+  }
+  
+  .sectionOne::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(5, 0, 0, 0.555);
+    background-image: url(../../public/images/tree.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+  }
+  
+  
+@keyframes gradientTransition {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.design {
+    position: relative;
+    z-index: 3;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    top: 2005px;
+    left: 300px;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s ease-in-out;
+    animation: borderDesign 8s linear infinite;
+}
+
+@keyframes borderDesign {
+    0% {
+      border: solid #4d78ec;
+    }
+    25% {
+      border: solid rgb(47, 47, 155);
+    }
+    50% {
+      border: solid blue;
+    }
+    75% {
+      border: solid rgb(45, 45, 134);
+    }
+    100% {
+      border: solid #5858ff;
+    }
+  }
+  
+.design:hover {
+    transform: scale(1.4);
+}
+
+.design .title {
+    font-weight: 50;
+     font-family: 'Trebuchet MS';
+     display: inline-block;
+     animation: breatheLetters 8s infinite;
+  }
+
+  .design:hover .title{
+    animation: none;
+  }
+
+.news {
+    position: relative;
+    z-index: 3;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    top: 2025px;
+    left: 1370px;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s ease-in-out;
+    animation: newsDesign 8s linear infinite;
+}  
+
+.news:hover {
+    transform: scale(1.4);
+}
+
+.news .newsTitle {
+    font-weight: 50;
+     font-family: 'Trebuchet MS';
+     display: inline-block;
+     animation: breatheLetters 8s infinite;
+  }
+
+  .news:hover .newsTitle{
+    animation: none;
+  }
+
+  .music {
+    position: relative;
+    z-index: 3;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    top: 2130px;
+    left: 970px;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s ease-in-out;
+    animation: musicDesign 8s linear infinite;
+}
+  
+  .music:hover {
+    transform: scale(1.4);
+}
+
+.music .musicTitle {
+    font-weight: 50;
+     font-family: 'Trebuchet MS';
+     display: inline-block;
+     animation: breatheLetters 8s infinite;
+  }
+
+  .music:hover .musicTitle{
+    animation: none;
+  }
+
+
+  .finance {
+    position: relative;
+    z-index: 3;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    top: 2165px;
+    left: 432px;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s ease-in-out;
+    animation: financeDesign 8s linear infinite;
+}
+
+.finance:hover {
+    transform: scale(1.4);
+}
+
+.finance .financeTitle {
+    font-weight: 50;
+     font-family: 'Trebuchet MS';
+     display: inline-block;
+     animation: breatheLetters 8s infinite;
+  }
+
+  .finance:hover .financeTitle{
+    animation: none;
+  }
+
+@keyframes financeDesign {
+    0% {
+      border: solid #53a005;
+    }
+    25% {
+      border: solid #6a8b26;
+    }
+    50% {
+      border: solid #32cd32;
+    }
+    75% {
+      border: solid #228b22;
+    }
+    100% {
+      border: solid #008000;
+    }
+  }
+
+  @keyframes musicDesign {
+    0% {
+      border: solid #ff8000;
+    }
+    25% {
+      border: solid #ffbf00;
+    }
+    50% {
+      border: solid #ffa500;
+    }
+    75% {
+      border: solid #ff8c00(45, 45, 134);
+    }
+    100% {
+      border: solid #ff4500;
+    }
+  }
+
+
+  @keyframes newsDesign {
+    0% {
+      border: solid #FF0000;
+    }
+    25% {
+      border: solid rgb(155, 47, 47);
+    }
+    50% {
+      border: solid #800000;
+    }
+    75% {
+      border: solid rgb(134, 45, 45);
+    }
+    100% {
+      border: solid #FF5858;
+    }
+  }
+
+  @keyframes breatheLetters {
+    0% {
+      transform: scale(1)
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+    
+  }
